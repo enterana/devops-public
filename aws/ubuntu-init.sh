@@ -7,7 +7,7 @@ DDTOKEN=${TOKEN:?duckdns token}
 DDHOST=${HOST:?duckdns host}
 LEEMAIL=${EMAIL:?letsencrypt email}
 # Install PHP and extensions
-apt-get update -y && apt install php7.3-cli -y && apt-get install php-gd -y && apt-get install php-curl -y && apt-get install php-mbstring -y && apt-get install php-xml -y && apt install mariadb-client-core-10.1 -y && apt install mysql-client-5.7 -y
+apt-get update -y && apt install php -y && apt-get install php-gd -y && apt-get install php-curl -y && apt-get install php-mbstring -y && apt-get install php-xml -y && apt install mariadb-client-core-10.1 -y && apt install mysql-client-5.7 -y
 # Install zip/unzip
 apt-get install zip -y && apt-get install unzip -y
 # Install make
