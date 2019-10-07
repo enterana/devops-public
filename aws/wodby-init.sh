@@ -1,6 +1,6 @@
 #!/bin/bash
 # Clone the repo
-git clone git@bitbucket.org:cperry-mdedge/d8-sandbox.git /home/ubuntu/d8-sandbox
+git clone git@github.com:enterana/modus-sesamo-sandbox.git /home/ubuntu/modus-sesamo-sandbox
 # Build  .env file
 echo "### Documentation available at https://wodby.com/docs/stacks/drupal/local
 ### Changelog can be found at https://github.com/wodby/docker4drupal/releases
@@ -110,8 +110,8 @@ MEMCACHED_TAG=1-2.2.2
 OPENSMTPD_TAG=6.0-1.4.1
 RSYSLOG_TAG=latest
 WEBGRIND_TAG=1.5-1.9.7
-XHPROF_TAG=1.3.7" >> /home/ubuntu/d8-sandbox/.env
+XHPROF_TAG=1.3.7" >> /home/ubuntu/modus-sesamo-sandbox/.env
 # Kick off make process for Wodby
-cd /home/ubuntu/d8-sandbox
+cd /home/ubuntu/modus-sesamo-sandbox
 composer install
 sudo make up
